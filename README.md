@@ -4,7 +4,7 @@
 
 Supports multiple layouts out of the box. Works well with Bootstrap 3. Easy to customize markup and CSS. 
 
-[Check out the live demos.](http://www.wimagguc.com/2015/04/jquery-eu-cookie-law-popup/)
+[Check out the live demos.](http://www.wimagguc.com/2015/03/jquery-eu-cookie-law-popup/)
 
 ## Get started
 
@@ -42,7 +42,7 @@ And these colours or styles:
 * Compact ("eupopup-style-compact")
 
 
-(See more options in the demo.html, or in the [live demo page](http://www.wimagguc.com/2015/04/jquery-eu-cookie-law-popup/).
+(See more options in the demo.html, or in the [live demo page](http://www.wimagguc.com/2015/03/jquery-eu-cookie-law-popup/).
 
 
 ## License

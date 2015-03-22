@@ -7,7 +7,7 @@
  * https://github.com/wimagguc/jquery-eu-cookie-law-popup
  * 
  * To see a live demo, go to:
- * http://www.wimagguc.com/2015/04/jquery-eu-cookie-law-popup/
+ * http://www.wimagguc.com/2015/03/jquery-eu-cookie-law-popup/
  * 
  * by Richard Dancsi
  * http://www.wimagguc.com/

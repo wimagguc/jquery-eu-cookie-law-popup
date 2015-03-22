@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>jQuery EU Cookie Law popups</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<!-- Dependencies: JQuery should be loaded first -->
+	<script src="js/jquery-2.1.3.min.js"></script>
+
+	<!-- CSS and JS for our code -->
+	<link rel="stylesheet" type="text/css" href="css/jquery-eu-cookie-law-popup.css"/>
+	<script src="js/jquery-eu-cookie-law-popup.js"></script>
+
+	<!-- Bootstrap for the Bootstrap examples -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+
+</head>
+<body>
+	
+	<div class="eupopup eupopup-top eupopup-style-compact"></div>
+
+	<h1>jQuery EU Cookie Law popups</h1>
+
+	<div class="description">
+		<b>An easy-to-install jQuery plugin to create EU Cookie Law popups.</b>
+		<br/><br>
+		Supports multiple layouts out of the box. Works well with Bootstrap 3. Easy to customize markup and CSS.
+		<br/><br>
+		This is a demo page; the newest live demo will always be <a href="http://www.wimagguc.com/2015/04/jquery-eu-cookie-law-popup/">here</a>.
+		<br/>
+		For the code, install instructions and to see how amazingly free it is, <a href="https://github.com/wimagguc/jquery-eu-cookie-law-popup">go to Github</a>.
+		<br/>
+		Also, you might find other interesting things on my blog at <a href="http://www.wimagguc.com/">wimagguc.com</a>.<br/>
+	</div>
+
+	<H2>Get started</H2>
+
+	<div class="description">
+		To get started, first include jQuery and import the plugin's files: 
+	</div>
+
+	<div class="code">
+&lt;script src="js/jquery-2.1.3.min.js"&gt;&lt;/script&gt;
+<br>
+&lt;link rel="stylesheet" type="text/css" href="css/jquery-eu-cookie-law-popup.css"/&gt;
+<br>
+&lt;script src="js/jquery-eu-cookie-law-popup.js"&gt;&lt;/script&gt;
+	</div>
+
+	<div class="description">
+		(Mind you, you need to run the code on a webserver to be able to set cookies.) 
+	</div>
+
+	<H2>Simple popup</H2>
+
+	<div class="description">
+		In its simplest form, you can add an EU Cookie Law popup by simply adding the "eupopup" classes to any HTML tag.
+	</div>
+
+	<div class="code">
+&lt;body class="eupopup eupopup-top"&gt;
+	</div>
+
+	<div class="description">
+		You can also choose from these layouts:
+		<ul>
+			<li>("eupopup", or "eupopup eupopup-top")</li>
+			<li>("eupopup eupopup-fixedtop")</li>
+			<li>("eupopup eupopup-bottom")</li>
+			<li>("eupopup eupopup-bottomleft")</li>
+			<li>("eupopup eupopup-bottomright")</li>
+			<li>("eupopup eupopup-block")</li>
+		</ul>
+		<br>
+		And these colours or styles:
+		<ul>
+			<li>White text on dark background ("eupopup-color-default")</li>
+			<li>Dark text on light background ("eupopup-color-inverse")</li>
+			<li>Compact ("eupopup-style-compact")</li>
+		</ul>
+	</div>
+
+	<H2>Custom HTML</H2>
+
+	<div class="description">
+		To use a custom HTML markup, you can either add it as a Javascript parameter (read about it later), or by adding a DIV with the classname "eupopup-markup".
+	</div>
+
+	<div class="code">
+&lt;div class="eupopup eupopup-container eupopup-container-block"&gt;
+<br>
+&nbsp; &lt;div class="eupopup-markup"&gt;
+<br>
+&nbsp; &nbsp; &lt;div class="eupopup-head"&gt;This website is using cookies&lt;/div&gt;
+<br>
+&nbsp; &nbsp; &lt;div class="eupopup-body"&gt;We use cookies to ensure that we give you the best experience on our website. If you continue using the site, we\'ll assume that you are happy to receive all cookies on this website.&lt;/div&gt;
+<br>
+&nbsp; &nbsp; &lt;div class="eupopup-buttons"&gt;
+<br>
+&nbsp; &nbsp; &nbsp; &lt;a href="#" class="eupopup-button eupopup-button_1"&gt;Continue&lt;/a&gt;
+<br>
+&nbsp; &nbsp; &nbsp; &lt;a href="http://www.wimagguc.com/?cookie-policy" target="_blank" class="eupopup-button eupopup-button_2"&gt;Learn more&lt;/a&gt;
+<br>
+&nbsp; &nbsp; &lt;/div&gt;
+<br>
+&nbsp; &nbsp; &lt;div class="clearfix"&gt;&lt;/div&gt;
+<br>
+&nbsp; &nbsp; &lt;a href="#" class="eupopup-closebutton"&gt;x&lt;/a&gt;
+<br>
+&nbsp; &lt;/div&gt;
+<br>
+&lt;/div&gt;
+	</div>
+
+<!--
+	$(document).bind("user_cookie_consent_changed", function(event, object) {
+	console.log("User cookie consent changed: " + $(object).attr('consent') );
+});
+-->
+
+	<H2>As seen on</H2>
+
+	<div class="description">
+		<a href="http://www.buntlabs.com/">Bunt Creative</a>,
+		<a href="http://www.divespy.com/">Divespy</a>,
+		<a href="http://www.appwoodoo.com/">Appwoodoo</a>
+		<br>
+		...and perhaps many more in the EU :)
+	</div>
+
+	<H2>Created By</H2>
+
+	<div class="description">
+		Richard Dancsi<br/><br/>
+		Blog: <a href="http://www.wimagguc.com/">www.wimagguc.com</a>
+		<br/>
+		Twitter: <a href="http://twitter.com/wimagguc">twitter.com/wimagguc</a>
+		<br/>
+		Github: <a href="http://github.com/wimagguc/">github.com/wimagguc</a>
+		<br/><br/>
+		<a href="https://github.com/wimagguc/jquery-eu-cookie-law-popup/blob/master/LICENSE.md">MIT, do-with-the-code-whatever-you-please License</a>
+	</div>
+
+</body>
+</html>

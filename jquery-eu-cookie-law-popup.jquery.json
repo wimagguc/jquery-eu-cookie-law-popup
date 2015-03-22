@@ -1,0 +1,29 @@
+{
+	"name": "jquery-eu-cookie-law-popup",
+	"title": "jQuery EU Cookie Law popups",
+	"description": "An easy-to-install jQuery plugin to create EU Cookie Law popups",
+	"keywords": [
+		"eu",
+		"cookie",
+		"law",
+		"popup"
+	],
+	"version": "1.0.0",
+	"author": {
+		"name": "Richard Dancsi",
+		"url": "http://www.wimagguc.com/"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/wimagguc/jquery-eu-cookie-law-popup/blob/master/LICENSE.md"
+		}
+	],
+	"bugs": "https://github.com/wimagguc/jquery-eu-cookie-law-popup/issues",
+	"homepage": "http://www.wimagguc.com/2015/04/jquery-eu-cookie-law-popup/",
+	"docs": "https://github.com/wimagguc/jquery-eu-cookie-law-popup/",
+	"download": "https://github.com/wimagguc/jquery-eu-cookie-law-popup/archive/master.zip",
+	"dependencies": {
+		"jquery": ">=1.7"
+	}
+}

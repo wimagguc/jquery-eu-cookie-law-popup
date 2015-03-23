@@ -26,16 +26,21 @@ In its simplest form, you can add an EU Cookie Law popup by simply adding the "e
   <body class="eupopup eupopup-top">
 ```
 
-You can also choose from these layouts:
+### You can also choose from these layouts:
 
-* "eupopup", or "eupopup eupopup-top"
-* "eupopup eupopup-fixedtop"
-* "eupopup eupopup-bottom"
-* "eupopup eupopup-bottomleft"
-* "eupopup eupopup-bottomright"
-* "eupopup eupopup-block"
+![image](docs/eucookielaw-demo.jpg)
 
-And these colours or styles:
+* Top of the page (“eupopup”, or “eupopup eupopup-top”)
+* Fixed banner on top (“eupopup eupopup-fixedtop”)
+* Fixed to bottom (“eupopup eupopup-bottom”)
+* Fixed window, to bottom left (“eupopup eupopup-bottomleft”)
+* Fixed window, bottom right (“eupopup eupopup-bottomright”)
+* Inline (“eupopup eupopup-block”)
+
+
+### And these colours or styles:
+
+![image](docs/eucookielaw-demo2.jpg)
 
 * White text on dark background ("eupopup-color-default")
 * Dark text on light background ("eupopup-color-inverse")

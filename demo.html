@@ -66,16 +66,21 @@
 
 	<div class="description">
 		You can also choose from these layouts:
+		<br/>
+		<img src="docs/eucookielaw-demo.jpg" width="70%"/>
+		<br/>
 		<ul>
-			<li>("eupopup", or "eupopup eupopup-top")</li>
-			<li>("eupopup eupopup-fixedtop")</li>
-			<li>("eupopup eupopup-bottom")</li>
-			<li>("eupopup eupopup-bottomleft")</li>
-			<li>("eupopup eupopup-bottomright")</li>
-			<li>("eupopup eupopup-block")</li>
+			<li>Top of the page (“eupopup”, or “eupopup eupopup-top”)</li>
+			<li>Fixed banner on top (“eupopup eupopup-fixedtop”)</li>
+			<li>Fixed to bottom (“eupopup eupopup-bottom”)</li>
+			<li>Fixed window, to bottom left (“eupopup eupopup-bottomleft”)</li>
+			<li>Fixed window, bottom right (“eupopup eupopup-bottomright”)</li>
+			<li>Inline (“eupopup eupopup-block”)</li>
 		</ul>
 		<br>
 		And these colours or styles:
+		<br>
+		<img src="docs/eucookielaw-demo2.jpg" width="70%"/>
 		<ul>
 			<li>White text on dark background ("eupopup-color-default")</li>
 			<li>Dark text on light background ("eupopup-color-inverse")</li>
@@ -115,11 +120,57 @@
 &lt;/div&gt;
 	</div>
 
-<!--
+	<H2>Parameters</H2>
+
+	<div class="description">
+		The script takes quite a few parameters. The suggested method to override these is from the init method (find the out-of-the-box one in the jquery-eu-cookie-law-popup.js): 
+	</div>
+
+	<div class="code">
+		(new EuCookieLawPopup()).init({
+		<br>
+		&nbsp; 	cookiePolicyUrl : 'http://www.wimagguc.com/?cookie-policy',
+		<br>
+		&nbsp; 	popupPosition : 'top',
+		<br>
+		&nbsp; 	colorStyle : 'default',
+		<br>
+		&nbsp; 	compactStyle : false,
+		<br>
+		&nbsp; 	popupTitle : 'This website is using cookies',
+		<br>
+		&nbsp; 	popupText : 'We use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we\'ll assume that you are happy to receive all cookies on this website.',
+		<br>
+		&nbsp; 	buttonContinueTitle : 'Continue',
+		<br>
+		&nbsp; 	buttonLearnmoreTitle : 'Learn&nbsp;more',
+		<br>
+		&nbsp; 	buttonLearnmoreOpenInNewWindow : true,
+		<br>
+		&nbsp; 	agreementExpiresInDays : 30,
+		<br>
+		&nbsp; 	autoAcceptCookiePolicy : false,
+		<br>
+		&nbsp; 	htmlMarkup : null
+		<br>
+		});
+	</div>
+
+	<H2>Events</H2>
+
+	<div class="description">
+		If you need to be notified about the consent somewhere in your code (for example, to enable the cookies in other parts of your software), you can listen to the 'user_cookie_consent_changed' event.  
+	</div>
+
+	<div class="code">
 	$(document).bind("user_cookie_consent_changed", function(event, object) {
-	console.log("User cookie consent changed: " + $(object).attr('consent') );
-});
--->
+	<br>
+	&nbsp; 	// true or false
+	<br>
+	&nbsp; 	console.log("User consent: " + $(object).attr('consent') );
+	<br>
+	});
+	</div>
 
 	<H2>As seen on</H2>
 

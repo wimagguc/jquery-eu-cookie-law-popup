@@ -1,7 +1,7 @@
 /**
  * 	
  * JQUERY EU COOKIE LAW POPUPS
- * version 1.0.0
+ * version 1.0.1
  * 
  * Code on Github:
  * https://github.com/wimagguc/jquery-eu-cookie-law-popup

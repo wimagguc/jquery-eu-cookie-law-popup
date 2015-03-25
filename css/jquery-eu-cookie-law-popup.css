@@ -10,7 +10,7 @@
 	line-height: 1.2em;
 	text-align: center;
 	display: none;
-	z-index: 1100;
+	z-index: 9999999;
 }
 
 .eupopup-container-top,

@@ -39,7 +39,8 @@ $.fn.euCookieLawPopup = (function() {
 		buttonLearnmoreOpenInNewWindow : true,
 		agreementExpiresInDays : 30,
 		autoAcceptCookiePolicy : false,
-		htmlMarkup : null
+		htmlMarkup : null,
+		reloadPage : false
 	};
 
 	///////////////////////////////////////////////////////////////////////////////////////////////
@@ -124,6 +125,9 @@ $.fn.euCookieLawPopup = (function() {
 			}
 			if (typeof settings.htmlMarkup !== 'undefined') {
 				_self.params.htmlMarkup = settings.htmlMarkup;
+			}
+			if (typeof settings.reloadPage !== 'undefined') {
+				_self.params.reloadPage = settings.reloadPage;
 			}
 		}
 
@@ -225,11 +229,13 @@ $.fn.euCookieLawPopup = (function() {
 			$('.eupopup-button_1').click(function() {
 				setUserAcceptsCookies(true);
 				hideContainer();
+				if (_self.params.reloadPage) location.reload();
 				return false;
 			});
 			$('.eupopup-closebutton').click(function() {
 				setUserAcceptsCookies(true);
 				hideContainer();
+				if (_self.params.reloadPage) location.reload();
 				return false;
 			});
 			// ^^^ Markup and event listeners

@@ -6,7 +6,7 @@ Supports multiple layouts out of the box. Works well with Bootstrap. Easy to cus
 
 [Check out the live demos.](http://www.wimagguc.com/2018/05/gdpr-compliance-with-the-jquery-eu-cookie-law-plugin/)
 
-**NEW**: Demo: how to this plugin for GDPR compliance?
+**NEW** in demos: how to use this plugin for GDPR compliance?
 
 ## Get started
 

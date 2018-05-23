@@ -1,17 +1,17 @@
 /**
- * 	
+ *
  * JQUERY EU COOKIE LAW POPUPS
- * version 1.0.1
- * 
+ * version 1.1.1
+ *
  * Code on Github:
  * https://github.com/wimagguc/jquery-eu-cookie-law-popup
- * 
+ *
  * To see a live demo, go to:
- * http://www.wimagguc.com/2015/03/jquery-eu-cookie-law-popup/
- * 
+ * http://www.wimagguc.com/2018/05/gdpr-compliance-with-the-jquery-eu-cookie-law-plugin/
+ *
  * by Richard Dancsi
  * http://www.wimagguc.com/
- * 
+ *
  */
 
 (function($) {
@@ -135,10 +135,10 @@ $.fn.euCookieLawPopup = (function() {
 			return _self.params.htmlMarkup;
 		}
 
-		var html = 
-			'<div class="eupopup-container' + 
-			    ' eupopup-container-' + _self.params.popupPosition + 
-			    (_self.params.compactStyle ? ' eupopup-style-compact' : '') + 
+		var html =
+			'<div class="eupopup-container' +
+			    ' eupopup-container-' + _self.params.popupPosition +
+			    (_self.params.compactStyle ? ' eupopup-style-compact' : '') +
 				' eupopup-color-' + _self.params.colorStyle + '">' +
 				'<div class="eupopup-head">' + _self.params.popupTitle + '</div>' +
 				'<div class="eupopup-body">' + _self.params.popupText + '</div>' +
@@ -179,7 +179,7 @@ $.fn.euCookieLawPopup = (function() {
 
 		return userAcceptedCookies;
 	};
-	
+
 	var hideContainer = function() {
 		// $('.eupopup-container').slideUp(200);
 		$('.eupopup-container').animate({
@@ -204,6 +204,7 @@ $.fn.euCookieLawPopup = (function() {
 
 			// No need to display this if user already accepted the policy
 			if (userAlreadyAcceptedCookies()) {
+        $(document).trigger("user_cookie_already_accepted", {'consent': true});
 				return;
 			}
 
@@ -237,7 +238,7 @@ $.fn.euCookieLawPopup = (function() {
 			// Ready to start!
 			$('.eupopup-container').show();
 
-			// In case it's alright to just display the message once 
+			// In case it's alright to just display the message once
 			if (_self.params.autoAcceptCookiePolicy) {
 				setUserAcceptsCookies(true);
 			}

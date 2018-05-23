@@ -1,14 +1,15 @@
 {
 	"name": "jquery-eu-cookie-law-popup",
 	"title": "jQuery EU Cookie Law popups",
-	"description": "An easy-to-install jQuery plugin to create EU Cookie Law popups",
+	"description": "An easy-to-install jQuery plugin to create EU Cookie Law popups &amp; GDPR compliance",
 	"keywords": [
 		"eu",
+    "gdpr",
 		"cookie",
 		"law",
 		"popup"
 	],
-	"version": "1.0.1",
+	"version": "1.1.1",
 	"author": {
 		"name": "Richard Dancsi",
 		"url": "http://www.wimagguc.com/"
@@ -20,7 +21,7 @@
 		}
 	],
 	"bugs": "https://github.com/wimagguc/jquery-eu-cookie-law-popup/issues",
-	"homepage": "http://www.wimagguc.com/2015/03/jquery-eu-cookie-law-popup/",
+	"homepage": "http://www.wimagguc.com/2018/05/gdpr-compliance-with-the-jquery-eu-cookie-law-plugin/",
 	"docs": "https://github.com/wimagguc/jquery-eu-cookie-law-popup/",
 	"download": "https://github.com/wimagguc/jquery-eu-cookie-law-popup/archive/master.zip",
 	"dependencies": {

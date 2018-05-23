@@ -1,17 +1,19 @@
 # jQuery EU Cookie Law popups
 
-**An easy-to-install jQuery plugin to create EU Cookie Law popups**
+**An easy-to-install jQuery plugin to create EU Cookie Law popups and for GDPR compliance.**
 
-Supports multiple layouts out of the box. Works well with Bootstrap 3. Easy to customize markup and CSS. 
+Supports multiple layouts out of the box. Works well with Bootstrap. Easy to customize markup and CSS.
 
-[Check out the live demos.](http://www.wimagguc.com/2015/03/jquery-eu-cookie-law-popup/)
+[Check out the live demos.](http://www.wimagguc.com/2018/05/gdpr-compliance-with-the-jquery-eu-cookie-law-plugin/)
+
+**NEW**: Demo: how to this plugin for GDPR compliance?
 
 ## Get started
 
 To get started, first include jQuery and import the plugin's files:
 
 ```
-  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/jquery-eu-cookie-law-popup.css"/>
   <script src="js/jquery-eu-cookie-law-popup.js"></script>
 ```
@@ -47,7 +49,7 @@ In its simplest form, you can add an EU Cookie Law popup by simply adding the "e
 * Compact ("eupopup-style-compact")
 
 
-(See more options in the demo.html, or in the [live demo page](http://www.wimagguc.com/2015/03/jquery-eu-cookie-law-popup/).
+(See more options in the demo.html, or in the [live demo page](http://www.wimagguc.com/2018/05/gdpr-compliance-with-the-jquery-eu-cookie-law-plugin/).
 
 
 ## License

@@ -172,7 +172,7 @@ $.fn.euCookieLawPopup = (function() {
 		var cookies = document.cookie.split(";");
 		for (var i = 0; i < cookies.length; i++) {
 			var c = cookies[i].trim();
-			if (c.indexOf(_self.vars.COOKIE_NAME) === 0) {
+			if (c.indexOf(_self.vars.COOKIE_NAME) !== -1) {
 				userAcceptedCookies = c.substring(_self.vars.COOKIE_NAME.length + 1, c.length);
 			}
 		}

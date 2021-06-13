@@ -229,7 +229,7 @@ $.fn.euCookieLawPopup = (function() {
 				return false;
 			});
 			$('.eupopup-closebutton').click(function() {
-				setUserAcceptsCookies(true);
+				setUserAcceptsCookies(false);
 				hideContainer();
 				return false;
 			});
